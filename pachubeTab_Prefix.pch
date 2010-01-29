@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'pachubeTab' target in the 'pachubeTab' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import <CoreLocation/CoreLocation.h>
+#endif
