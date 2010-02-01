@@ -7,8 +7,6 @@
 //	Version 0.27
 
 
-
-
 #import "TextViewController.h"
 
 @implementation TextViewController
