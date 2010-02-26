@@ -416,7 +416,7 @@ if (usernameTemp == NULL || usernameTemp == nil || usernameTemp == @"" || passwo
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-	FeedUpdate *dvController = [[FeedUpdate alloc] initWithNibName:@"feedController" bundle:[NSBundle mainBundle]];
+	FeedUpdate *dvController = [[FeedUpdate alloc] initWithNibName:@"FeedController" bundle:[NSBundle mainBundle]];
 	NSString *tempIndex = [NSString stringWithFormat:@"%i", indexPath.row];
 	NSLog(@"THE INDEX BEING PASSED:%@",[NSString stringWithFormat:@"%i", indexPath.row]);
 	dvController.createNew = NO;
