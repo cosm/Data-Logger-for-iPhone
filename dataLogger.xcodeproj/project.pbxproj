@@ -34,7 +34,6 @@
 		7069D06E103C17EC00F5C410 /* SetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7069D06D103C17EC00F5C410 /* SetUpViewController.m */; };
 		70A2F0EB103585540073D5C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A2F0EA103585540073D5C5 /* CoreLocation.framework */; };
 		70A2F0F71035865D0073D5C5 /* PachubeCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A2F0F51035865D0073D5C5 /* PachubeCLController.m */; };
-		70B0D8BA10CD2C83007373BD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B0D8B810CD2C83007373BD /* Reachability.m */; };
 		70B0D8E410CD3034007373BD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0D8E310CD3034007373BD /* SystemConfiguration.framework */; };
 		70D25F18107118E800956002 /* FeedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D25F17107118E800956002 /* FeedList.m */; };
 		70D25FB21072202200956002 /* FeedUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D25FB11072202200956002 /* FeedUpdate.m */; };
@@ -44,6 +43,7 @@
 		70D29F36108E293C004A0038 /* DescriptionEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D29F35108E293C004A0038 /* DescriptionEditor.xib */; };
 		70EB63BA103C72EB00DEDF6B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70EB63B9103C72EB00DEDF6B /* Settings.bundle */; };
 		70FC1AE310B3198B002DE056 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 70FC1AE210B3198B002DE056 /* about.html */; };
+		9D38F0C611DE62C10093EBE7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D38F0C511DE62C10093EBE7 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,8 +82,6 @@
 		70A2F0F51035865D0073D5C5 /* PachubeCLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachubeCLController.m; sourceTree = "<group>"; };
 		70A2F0F61035865D0073D5C5 /* PachubeCLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachubeCLController.h; sourceTree = "<group>"; };
 		70A687B010922355000E2FB9 /* pachubeTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pachubeTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		70B0D8B710CD2C83007373BD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = /Volumes/Windows/NetConnectDetect/Classes/Reachability.h; sourceTree = "<absolute>"; };
-		70B0D8B810CD2C83007373BD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = /Volumes/Windows/NetConnectDetect/Classes/Reachability.m; sourceTree = "<absolute>"; };
 		70B0D8E310CD3034007373BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		70D25F16107118E800956002 /* FeedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedList.h; sourceTree = "<group>"; };
 		70D25F17107118E800956002 /* FeedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedList.m; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		70EB63B9103C72EB00DEDF6B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		70FC1AE210B3198B002DE056 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* pachubeTab-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pachubeTab-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9D38F0C411DE62C10093EBE7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9D38F0C511DE62C10093EBE7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,10 +256,10 @@
 		70EA51CA10D67310004C6D98 /* external_classes */ = {
 			isa = PBXGroup;
 			children = (
+				9D38F0C411DE62C10093EBE7 /* Reachability.h */,
+				9D38F0C511DE62C10093EBE7 /* Reachability.m */,
 				7045A56910358F4C001E21F0 /* NSDataAdditions.m */,
 				7045A56A10358F4C001E21F0 /* NSDataAdditions.h */,
-				70B0D8B710CD2C83007373BD /* Reachability.h */,
-				70B0D8B810CD2C83007373BD /* Reachability.m */,
 			);
 			name = external_classes;
 			sourceTree = "<group>";
@@ -350,7 +350,7 @@
 				7055C6111084C8B7009F99A2 /* SettingsTable.m in Sources */,
 				70D29D07108DE831004A0038 /* FeedInfo.m in Sources */,
 				70D29EA7108E1A75004A0038 /* TextViewController.m in Sources */,
-				70B0D8BA10CD2C83007373BD /* Reachability.m in Sources */,
+				9D38F0C611DE62C10093EBE7 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
