@@ -387,14 +387,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Connected Environments Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Burman (9L9S7DT5ZD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = PachubeLogger;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B860C556-A578-4BD6-B815-E6E0D863C0EF";
-				SDKROOT = iphoneos2.2.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "838F9F14-182F-4F25-9E7E-458CDB18F28F";
+				SDKROOT = iphoneos3.2;
 			};
 			name = Distribution;
 		};
@@ -415,14 +415,14 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Connected Environments Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Burman (9L9S7DT5ZD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = PachubeLogger;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B860C556-A578-4BD6-B815-E6E0D863C0EF";
-				SDKROOT = iphoneos2.2.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "838F9F14-182F-4F25-9E7E-458CDB18F28F";
+				SDKROOT = iphoneos3.2;
 			};
 			name = "Distribution Ad Hoc";
 		};
@@ -442,14 +442,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Connected Environments Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Burman (9L9S7DT5ZD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = PachubeLogger;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B860C556-A578-4BD6-B815-E6E0D863C0EF";
-				SDKROOT = iphoneos2.2.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "838F9F14-182F-4F25-9E7E-458CDB18F28F";
+				SDKROOT = iphoneos3.2;
 			};
 			name = "Distribution Outside Beta Ad Hoc";
 		};
@@ -469,14 +469,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Connected Environments Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Burman (9L9S7DT5ZD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = PachubeLogger;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D17A5EE4-1565-4FEC-B58D-ACAE8FC12F57";
-				SDKROOT = iphoneos2.2.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "838F9F14-182F-4F25-9E7E-458CDB18F28F";
+				SDKROOT = iphoneos3.2;
 			};
 			name = Debug;
 		};
@@ -484,14 +484,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Connected Environments Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Burman (9L9S7DT5ZD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = PachubeLogger;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D17A5EE4-1565-4FEC-B58D-ACAE8FC12F57";
-				SDKROOT = iphoneos2.2.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "838F9F14-182F-4F25-9E7E-458CDB18F28F";
+				SDKROOT = iphoneos3.2;
 			};
 			name = Release;
 		};
