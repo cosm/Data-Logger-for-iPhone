@@ -516,7 +516,7 @@
 		//the url
 		
 		//NSString* urlFull = [NSString stringWithFormat:@""];
-		NSString* urlFull = [NSString stringWithFormat:@"https://www.pachube.com/api.xml"];
+		NSString* urlFull = [NSString stringWithFormat:@"https://api.pachube.com/v1/feeds.xml"];
 		
 		NSString* usernameTemp = [[NSUserDefaults standardUserDefaults] stringForKey:@"username"]; 
 		NSString* passwordTemp = [[NSUserDefaults standardUserDefaults] stringForKey:@"password"]; 
@@ -599,16 +599,16 @@
 			NSLog([httpDictionary description]);
 			
 			// hard code this in defaults
-			NSLog(@"THIS IS WHAT I NEED %@", [httpDictionary objectForKey:@"Location"]);
-			
-			NSString *parseString = [NSString stringWithFormat:@"THIS IS WHAT I NEED %@", [httpDictionary objectForKey:@"Location"]];
-			
+			NSString *location = [httpDictionary objectForKey:@"Location"];
+
 			//gets the integer value of the feed returned in the http header
-			tempFeedNumber = [parseString stringByTrimmingCharactersInSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]];
+			tempFeedNumber = [location lastPathComponent];
 			
 			NSLog(@"Attempts: %i", [tempFeedNumber integerValue]);
 			NSLog(@"AS NORMAL = %@", tempFeedNumber);
-			[newFeedDetails setObject:tempFeedNumber forKey:@"fdID"];
+			
+            [newFeedDetails setObject:tempFeedNumber forKey:@"fdID"];
+            
 			// open a alert with an OK and cancel button
 			
 			//NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];

@@ -234,9 +234,9 @@
 	NSLog(@"%@",pachubeXML);
 
 	statusLabel.text = @"Processing Update";
-	
+
 	NSLog(@"MAIN FEED ID: %@",mainFeedID);
- 	NSString* urlFull = [NSString stringWithFormat:@"https://www.pachube.com/api/%@.xml", mainFeedID];
+ 	NSString* urlFull = [NSString stringWithFormat:@"http://api.pachube.com/v1/feeds/%@.xml", mainFeedID];
 
 	
 	NSString* usernameTemp = [[NSUserDefaults standardUserDefaults] stringForKey:@"username"]; 
@@ -326,7 +326,7 @@
 		
 		[self alertForbidden];
 			[self networkRequestFailed];
-	statusLabel.text = @"Update Failed. You Do Not Have Access To This Feed";
+	statusLabel.text = @"Cannot update: exceeds your Pachube account allowance.";
 		
 	} else if (responseStatusCode == 404) {
 		
@@ -488,7 +488,7 @@
 - (void)alertForbidden
 {
 	// open a alert with an OK and cancel button
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Feed Error" message:@"Sorry You Don't Have Access To This Feed"
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Feed Error" message:@"Cannot update: exceeds Pachube account allowance."
 												   delegate:self cancelButtonTitle:@"OK"  otherButtonTitles:nil, nil];
 	
 	[alert show];
@@ -1011,6 +1011,11 @@
 	mainValueEntry.text = [feedDictionary objectForKey:@"fdCurrentValue"];
 	unitLabel.text = [feedDictionary objectForKey:@"fdUnit"];
 	mainFeedID = [feedDictionary objectForKey:@"fdID"];
+    // fix the old, corrupt fdId
+    if ([mainFeedID hasPrefix:@"1/feeds"]) {
+        mainFeedID = [mainFeedID lastPathComponent];
+    }
+
 	
 	NSString *botLabelNumTemp = [feedDictionary objectForKey:@"fdMinNum"];
 	NSString *topLabelNumTemp = [feedDictionary objectForKey:@"fdMaxNum"];
