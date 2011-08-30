@@ -94,20 +94,6 @@ static NSString *kPasswordTextField = @"passwordKey";
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
 	
-	
-	NSLog(@"editing the login details %@", textField.tag);
-	
-	if(textField.tag == kUsernameTextField)
-		
-	{
-		
-		textFieldSecure.userInteractionEnabled = NO;
-		
-	}else if(textField.tag == kPasswordTextField){
-		
-		textFieldNormal.userInteractionEnabled = NO;
-		
-	}
 }
     
 	
@@ -126,23 +112,10 @@ static NSString *kPasswordTextField = @"passwordKey";
 	
 	[textField resignFirstResponder];
 	
-	
-	// this should sync the settings
-	// for now just sync the password and the username when it's returned
-	
-	if (textField.tag == kUsernameTextField) {
-		
-		[[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:@"username"];
-	
-	} else if (textField.tag == kPasswordTextField) {
-		
-		[[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:@"password"];
-		
-	}
-	
-		NSLog(@"field: %@, textfield value: %@", textField.tag, textField.text);
-	
-		return YES;
+    [[NSUserDefaults standardUserDefaults] setObject:textFieldNormal.text forKey:@"username"];
+    [[NSUserDefaults standardUserDefaults] setObject:textFieldSecure.text forKey:@"password"];
+
+    return YES;
 	
 }
 
