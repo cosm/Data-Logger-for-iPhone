@@ -10,3 +10,9 @@ build/
 
 *.mode1v3
 *.mode2v3
+
+*.xcworkspacedata
+*.xcuserstate
+*.xcbkptlist
+*.xcscheme
+xcschememanagement.plist
