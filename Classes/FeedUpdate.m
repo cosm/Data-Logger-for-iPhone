@@ -4,7 +4,7 @@
 //
 //  Created by Christopher Burman on 01/12/2009.
 //  Copyright 2009 Connected Environments Ltd. 
-//	Version 0.28
+//	Version 1.0.01
 
 
 //	This file is part of Data Logger for iPhone.
@@ -260,7 +260,7 @@
 	NSString *authString = [[[NSString stringWithFormat:@"%@:%@", usernameTemp, passwordTemp] dataUsingEncoding:NSUTF8StringEncoding] base64Encoding];
 	authString = [NSString stringWithFormat: @"Basic %@", authString];
 	
-	NSString *userAgent = [NSString stringWithFormat:@"DataLogger for iPhone (V. %.2f)", kDataLoggerVersion];
+	NSString *userAgent = [NSString stringWithFormat:@"DataLogger for iPhone (V. %@)", kDataLoggerVersion];
 		
 	NSLog(@"%@",userAgent);
 	

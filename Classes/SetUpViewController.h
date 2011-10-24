@@ -4,7 +4,7 @@
 //
 //  Created by Christopher Burman on 01/12/2009.
 //  Copyright 2009 Connected Environments Ltd. 
-//	Version 0.28
+//	Version 1.0.01
 
 
 //	This file is part of Data Logger for iPhone.

@@ -4,7 +4,7 @@
 //
 //  Created by Christopher Burman on 01/12/2009.
 //  Copyright 2009 Connected Environments Ltd. 
-//	Version 0.28
+//	Version 1.0.01
 
 
 //	This file is part of Data Logger for iPhone.
@@ -58,7 +58,7 @@ navigationType:(UIWebViewNavigationType)navigationType; {
 	
 	aboutText.delegate = self;
 
-	versionLabel.text = [NSString stringWithFormat:@"Version: %.2f", kDataLoggerVersion];
+	versionLabel.text = [NSString stringWithFormat:@"Version: %@", kDataLoggerVersion];
 
 	[aboutText loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"about" ofType:@"html"]isDirectory:NO]]];
 	
