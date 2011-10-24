@@ -731,7 +731,7 @@
 	
 	if (actionSheet.tag == @"alertFeedCreationFinished"){
 		
-		NSLog(@"feedCreation Finsihed");	
+		NSLog(@"feedCreation Finished");	
 		[self infoPage];
 		
 	} else if (actionSheet.tag == @"alertConfirmFeedCreation" && buttonIndex == 1){

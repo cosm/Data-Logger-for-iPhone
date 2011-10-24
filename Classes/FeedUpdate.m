@@ -91,9 +91,9 @@
 -(IBAction)button2Send:(id)sender
 {
 	
-	locationController = [[PachubeCLController alloc] init];
-	[locationController.locationManager startUpdatingLocation];
-	locationController.delegate = self;
+//	locationController = [[PachubeCLController alloc] init];
+//	[locationController.locationManager startUpdatingLocation];
+//	locationController.delegate = self;
 	
 	
 	pachubeTabAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
@@ -613,9 +613,9 @@
 
 		[feedDictionary setObject:@"1" forKey:@"fdGPS"];
 		
-		locationController = [[PachubeCLController alloc] init];
-		[locationController.locationManager startUpdatingLocation];
-		locationController.delegate = self;
+//		locationController = [[PachubeCLController alloc] init];
+//		[locationController.locationManager startUpdatingLocation];
+//		locationController.delegate = self;
 		
 
 		
@@ -1093,13 +1093,13 @@
 	{		
 		// starts the location call is gps is on
 		
-		if ([gpsSwitch isOn] == YES){
+//		if ([gpsSwitch isOn] == YES){
 			
 			locationController = [[PachubeCLController alloc] init];
 			[locationController.locationManager startUpdatingLocation];
 			locationController.delegate = self;
 			
-		}
+//		}
 		
 		
 		
