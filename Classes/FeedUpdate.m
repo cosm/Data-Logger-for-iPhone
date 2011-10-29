@@ -964,8 +964,11 @@
 
 - (void)locationUpdate:(CLLocation *)location {
 	
-
-	locationLabel.text = [[NSString alloc] initWithFormat:@"Last Location: %.7g, %.7g", location.coordinate.latitude, location.coordinate.longitude];
+    if ([gpsSwitch isOn] == YES){
+        locationLabel.text = [[NSString alloc] initWithFormat:@"Last Location: %.7g, %.7g", location.coordinate.latitude, location.coordinate.longitude];
+    } else {
+        locationLabel.text = @"Last Location: -";
+    }
 	pachubeLatitude = [[NSString alloc] initWithFormat:@"%g", location.coordinate.latitude];
 	pachubeLongitude = [[NSString alloc] initWithFormat:@"%g", location.coordinate.longitude];
 	pachubeAltitude = [[NSString alloc] initWithFormat:@"%g", location.altitude];
